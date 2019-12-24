@@ -1,0 +1,60 @@
+{
+    "workflowStatusDetails": {
+        "arn": "arn.some.execution.123o09124",
+        "status": "IN_PROGRESS",
+        "depArn": "arn.dep",
+        "depVersion": "v.dep",
+        "pprId": "ppr.v1",
+        "creationDateTime": "2019-12-23T21:49:25.772Z",
+        "milestoneStatusList": [
+            {
+                "arn": "arn.milestone",
+                "status": "SUCCESS",
+                "actionStatusList": [
+                    {
+                        "arn": "arn.action",
+                        "status": "SUCCESS",
+                        "type": "APPROVAL"
+                    },
+                    {
+                        "arn": "arn.action",
+                        "status": "SUCCESS",
+                        "type": "APPROVAL"
+                    }
+                ]
+            },
+            {
+                "arn": "arn.milestone",
+                "status": "IN_PROGRESS",
+                "actionStatusList": [
+                    {
+                        "arn": "arn.action",
+                        "status": "SUCCESS",
+                        "type": "APPROVAL"
+                    },
+                    {
+                        "arn": "arn.action",
+                        "status": "SUCCESS",
+                        "type": "APPROVAL"
+                    },
+                    {
+                        "arn": "arn.action",
+                        "status": "IN_PROGRESS",
+                        "type": "APPROVAL"
+                    }
+                ]
+            },
+            {
+                "arn": "arn.milestone",
+                "status": "NOT_STARTED",
+                "actionStatusList": [
+                    {
+                        "arn": "arn.action",
+                        "status": "NOT_STARTED",
+                        "type": "APPROVAL"
+                    }
+                ]
+            }
+        ]
+    }
+}
